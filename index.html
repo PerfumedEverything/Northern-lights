@@ -1,0 +1,921 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Северное сияние</title>
+    <script type="module" crossorigin src="/assets/js/index.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index.css">
+  </head>
+  <body>
+    <header class="header" data-js-header>
+      <div class="header__inner container">
+        <a
+          class="header__logo logo"
+          href="/"
+          aria-label="Северное сияние"
+          title="Северное сияние"
+        >
+          <img
+            class="logo__image"
+            src="./icons/logo.svg" 
+            alt="Северное сияние" 
+            width="162"
+            height="63"
+          />
+        </a>
+        <a class="header__contact-us-button button--accent visible-tablet" href="#">
+          Связаться с нами
+        </a>
+        <div class="header__overlay" data-js-header-overlay>
+          <div class="header__overlay-top">
+            <a
+              class="header__logo logo visible-tablet"
+              href="/"
+              aria-label="Северное сияние"
+              title="Северное сияние"
+            >
+              <img
+                class="logo__image"
+                src="./icons/logo.svg" 
+                alt="Северное сияние" 
+                width="162"
+                height="63"
+              />
+            </a>
+            <a class="header__contact-us-button button--accent visible-tablet" href="#">
+              Связаться с нами
+            </a>
+          </div>
+          <nav class="header__menu">
+            <ul class="header__menu-list">
+              <li class="header__menu-item">
+                <a class="header__menu-link" href="#">О компании</a>
+              </li>
+              <li class="header__menu-item">
+                <a class="header__menu-link" href="#">Светильники</a>
+              </li>
+              <li class="header__menu-item">
+                <a class="header__menu-link" href="#">Проекты</a>
+              </li>
+              <li class="header__menu-item">
+                <a class="header__menu-link" href="#">Вопрос-ответ</a>
+              </li>
+              <li class="header__menu-item">
+                <a class="header__menu-link" href="#">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="header__contacts">
+            <img class="header__contacts-icon" src="./icons/phone.svg" alt="Телефон">
+            <a class="header__contacts-link" href="tel:+78126127057">+7 (812) 612-70-57</a>
+          </div>
+          <div class="header__buttons">
+            <a href="#" class="header__download-button--overlay button--transparent">
+              Скачать каталог
+              <img src="./icons/download.svg" alt="Скачать каталог">
+            </a>
+            <a class="header__contact-us-button--overlay button--accent" href="#">
+              Связаться с нами
+            </a>
+          </div>
+        </div>
+        <button 
+          class="header__burger-button burger-button visible-tablet"
+          type="button"
+          aria-label="Открыть меню"
+          title="Открыть меню"
+          data-js-header-burger-button 
+        >
+          <span class="burger-button__line"></span>
+          <span class="burger-button__line"></span>
+        </button>
+      </div>
+    </header>
+    <main>
+      <section class="hero">
+        <div class="hero__inner container">
+          <header class="hero__header">
+            <h1 class="hero__title h1">
+              Освещение без компромиссов — для тех, кто строит <br> <span>серьёзный бизнес</span>
+            </h1>
+            <h5 class="hero__subtitle h5">
+              Светодиодные светильники <span>премиум-класса и индивидуальные решения</span> для офисов, магазинов, фитнес-клубов и общественных зон
+            </h5>
+          </header>
+          <div class="hero__body">
+            <button 
+              class="hero__button"
+              type="button"
+              aria-label="Подробнее"
+              title="Подробнее"
+            >
+              Подробнее
+              <img src="./icons/arrow-down.svg" alt="Подробнее">
+            </button>
+            <form 
+              class="hero__form" 
+              method="post" 
+              action="submit"
+              data-js-hero-form
+            >
+              <h4 class="hero__form-title h4">Узнайте <span>бюджет</span> на замену освещения</h4>
+              <label for="phone" class="hero__phone-label visually-hidden"></label>
+              <input 
+                class="hero__form-phone-input" 
+                type="tel" 
+                name="phone" 
+                id="phone" 
+                placeholder="+7 (___) ___-__-__"
+                aria-label="Телефон"
+                title="Телефон"
+                required
+                data-js-input-mask="+7 (000) 000-00-00"
+              >
+              <div class="hero__form-buttons">
+                <button 
+                  class="hero__form-button button--green" 
+                  type="submit" 
+                  aria-label="Узнать в WhatApp"
+                  title="Узнать в WhatApp"
+                  data-js-hero-form-button-whatsapp
+                >
+                  Узнать в WhatApp
+                </button>
+                <button
+                  class="hero__form-button button--accent"
+                  type="submit"
+                  aria-label="Узнать в Telegram"
+                  title="Узнать в Telegram"
+                  data-js-hero-form-button-telegram
+                >
+                  Узнать в Telegram
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+      <section 
+        class="options-slider options-slider--office" 
+        data-js-slider
+        data-slides="1"
+        data-loop="true"
+      >
+        <div class="options-slider__inner container">
+          <div class="options-slider__number">
+            <div class="options-slider__number-value">01.</div>
+            <h6 class="options-slider__number-title h6">Пространства</h6>
+            <div class="options-slider__number-line"></div>
+          </div>
+          <div class="options-slider__body">
+            <div class="options-slider__info">
+              <h2 class="options-slider__info-title h2">Светильники для <span class="accent-text">офисов</span> и <span class="accent-text">больших пространств</span></h2>
+              <h6 class="options-slider__info-subtitle h6">Все о внутреннем освещении.
+                Как сделать лучшее освещение своего офиса? 
+                Ваши сотрудники будут работать <span>активнее и плодотворнее</span>
+                при качественном освещении.
+                Сделайте освещение офиса <span>функциональным и предметом дизайна</span>.
+              </h6>
+              <a class="options-slider__info-button button--accent" href="#">Узнать подробнее</a>
+            </div>
+            <div class="options-slider__swiper swiper" data-js-slider-container>
+              <div class="options-slider__swiper-wrapper swiper-wrapper">
+                <div class="options-slider__swiper-slide swiper-slide">
+                  <img class="options-slider__swiper-image" src="./images/office.png" alt="Светильники для офисов и больших пространств">
+                  <a 
+                    class="options-slider__swiper-button button--purple" 
+                    href="#" 
+                    aria-label="Проекты" 
+                    title="Проекты"
+                  >
+                    Проекты
+                  </a>
+                  <div class="options-slider__description">
+                    <header class="options-slider__description-header">
+                      <h6 class="options-slider__description-title h6">Название проекта (если нужно)</h6>
+                    </header>
+                    <div class="options-slider__description-body">
+                      <p class="options-slider__description-text p">Листайте, чтобы увидеть больше</p>
+                      <a class="options-slider__description-link" href="#">
+                        <img src="./icons/arrow-left.svg" alt="Подробнее">
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="options-slider__swiper-slide swiper-slide">
+                  <img class="options-slider__swiper-image" src="./images/office.png" alt="Светильники для офисов и больших пространств">
+                  <a 
+                    class="options-slider__swiper-button button--purple" 
+                    href="#" 
+                    aria-label="Проекты" 
+                    title="Проекты"
+                  >
+                    Проекты
+                  </a>
+                  <div class="options-slider__description">
+                    <header class="options-slider__description-header">
+                      <h6 class="options-slider__description-title h6">Название проекта (если нужно)</h6>
+                    </header>
+                    <div class="options-slider__description-body">
+                      <p class="options-slider__description-text p">Листайте, чтобы увидеть больше</p>
+                      <a class="options-slider__description-link" href="#">
+                        <img src="./icons/arrow-left.svg" alt="Подробнее">
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="options-slider__swiper-navigation">
+                <a class="options-slider__swiper-nav-button options-slider__swiper-nav-button--prev" data-js-slider-prev>
+                  <img class="options-slider__swiper-nav-button-image" src="./icons/slider-arrow-left.svg" alt="Предыдущее">
+                </a>
+                <a class="options-slider__swiper-nav-button options-slider__swiper-nav-button--next" data-js-slider-next>
+                  <img class="options-slider__swiper-nav-button-image" src="./icons/slider-arrow-right.svg" alt="Следующее">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section 
+        class="options-slider options-slider--indirect" 
+        data-js-slider
+        data-slides="1"
+        data-loop="true"
+      >
+        <div class="options-slider__inner container">
+          <div class="options-slider__number">
+            <div class="options-slider__number-value">02.</div>
+            <h6 class="options-slider__number-title h6">Отраженный свет</h6>
+            <div class="options-slider__number-line"></div>
+          </div>
+          <div class="options-slider__body">
+            <div class="options-slider__info">
+              <h2 class="options-slider__info-title  h2">Отраженный <span class="accent-text">свет</span></h2>
+              <h6 class="options-slider__info-subtitle h6">Нестандартный дизайн привычного Армстронга! 
+                Лучший свет – <span>это свет, источник которого не виден.</span> Светильники отраженного добавят <span>премиальности</span> в ваш офис.
+                Мягкое, комфортное освещение с низким коэффициентом ослепленности (UGR).
+                
+              </h6>
+              <a class="options-slider__info-button button--accent" href="#">Узнать подробнее</a>
+            </div>
+            <div class="options-slider__swiper swiper" data-js-slider-container>
+              <div class="options-slider__swiper-wrapper swiper-wrapper">
+                <div class="options-slider__swiper-slide swiper-slide">
+                  <img class="options-slider__swiper-image" src="./images/office.png" alt="Светильники для офисов и больших пространств">
+                  <a 
+                    class="options-slider__swiper-button button--purple" 
+                    href="#" 
+                    aria-label="Проекты" 
+                    title="Проекты"
+                  >
+                    Проекты
+                  </a>
+                  <div class="options-slider__description">
+                    <header class="options-slider__description-header">
+                      <h6 class="options-slider__description-title h6">Название проекта (если нужно)</h6>
+                    </header>
+                    <div class="options-slider__description-body">
+                      <p class="options-slider__description-text p">Листайте, чтобы увидеть больше</p>
+                      <a class="options-slider__description-link" href="#">
+                        <img src="./icons/arrow-left.svg" alt="Подробнее">
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="options-slider__swiper-slide swiper-slide">
+                  <img class="options-slider__swiper-image" src="./images/office.png" alt="Светильники для офисов и больших пространств">
+                  <a 
+                    class="options-slider__swiper-button button--purple" 
+                    href="#" 
+                    aria-label="Проекты" 
+                    title="Проекты"
+                  >
+                    Проекты
+                  </a>
+                  <div class="options-slider__description">
+                    <header class="options-slider__description-header">
+                      <h6 class="options-slider__description-title h6">Название проекта (если нужно)</h6>
+                    </header>
+                    <div class="options-slider__description-body">
+                      <p class="options-slider__description-text p">Листайте, чтобы увидеть больше</p>
+                      <a class="options-slider__description-link" href="#">
+                        <img src="./icons/arrow-left.svg" alt="Подробнее">
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="options-slider__swiper-navigation">
+                <a class="options-slider__swiper-nav-button options-slider__swiper-nav-button--prev" data-js-slider-prev>
+                  <img class="options-slider__swiper-nav-button-image" src="./icons/slider-arrow-left.svg" alt="Предыдущее">
+                </a>
+                <a class="options-slider__swiper-nav-button options-slider__swiper-nav-button--next" data-js-slider-next>
+                  <img class="options-slider__swiper-nav-button-image" src="./icons/slider-arrow-right.svg" alt="Следующее">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section 
+        class="options-slider options-slider--profile" 
+        data-js-slider
+        data-slides="1"
+        data-loop="true"
+      >
+        <div class="options-slider__inner container">
+          <div class="options-slider__number">
+            <div class="options-slider__number-value">03.</div>
+            <h6 class="options-slider__number-title h6">Профильная система</h6>
+            <div class="options-slider__number-line"></div>
+          </div>
+          <div class="options-slider__body">
+            <div class="options-slider__info">
+              <h2 class="options-slider__info-title  h2">Профильная <span class="accent-text">система</span></h2>
+              <h6 class="options-slider__info-subtitle h6">Светильник с профильной системой. <span>Фетровое шумоподавление</span> со светильником. Тканевая равномерная засветкой нестандартных форм и размеров по вашему дизайну. <span>Любые формы светильников</span> по вашему дизайну. <span>Трендовое шумоподавление</span> на светильниках. Премиальные тканевые рассеиватели. Светильник на 260 кв. метров? Можем!
+              </h6>
+              <a class="options-slider__info-button button--accent" href="#">Узнать подробнее</a>
+            </div>
+            <div class="options-slider__swiper swiper" data-js-slider-container>
+              <div class="options-slider__swiper-wrapper swiper-wrapper">
+                <div class="options-slider__swiper-slide swiper-slide">
+                  <img class="options-slider__swiper-image" src="./images/office.png" alt="Светильники для офисов и больших пространств">
+                  <a 
+                    class="options-slider__swiper-button button--purple" 
+                    href="#" 
+                    aria-label="Проекты" 
+                    title="Проекты"
+                  >
+                    Проекты
+                  </a>
+                  <div class="options-slider__description">
+                    <header class="options-slider__description-header">
+                      <h6 class="options-slider__description-title h6">Название проекта (если нужно)</h6>
+                    </header>
+                    <div class="options-slider__description-body">
+                      <p class="options-slider__description-text p">Листайте, чтобы увидеть больше</p>
+                      <a class="options-slider__description-link" href="#">
+                        <img src="./icons/arrow-left.svg" alt="Подробнее">
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="options-slider__swiper-slide swiper-slide">
+                  <img class="options-slider__swiper-image" src="./images/office.png" alt="Светильники для офисов и больших пространств">
+                  <a 
+                    class="options-slider__swiper-button button--purple" 
+                    href="#" 
+                    aria-label="Проекты" 
+                    title="Проекты"
+                  >
+                    Проекты
+                  </a>
+                  <div class="options-slider__description">
+                    <header class="options-slider__description-header">
+                      <h6 class="options-slider__description-title h6">Название проекта (если нужно)</h6>
+                    </header>
+                    <div class="options-slider__description-body">
+                      <p class="options-slider__description-text p">Листайте, чтобы увидеть больше</p>
+                      <a class="options-slider__description-link" href="#">
+                        <img src="./icons/arrow-left.svg" alt="Подробнее">
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="options-slider__swiper-navigation">
+                <a class="options-slider__swiper-nav-button options-slider__swiper-nav-button--prev" data-js-slider-prev>
+                  <img class="options-slider__swiper-nav-button-image" src="./icons/slider-arrow-left.svg" alt="Предыдущее">
+                </a>
+                <a class="options-slider__swiper-nav-button options-slider__swiper-nav-button--next" data-js-slider-next>
+                  <img class="options-slider__swiper-nav-button-image" src="./icons/slider-arrow-right.svg" alt="Следующее">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section 
+        class="options-slider options-slider--uniform" 
+        data-js-slider
+        data-slides="1"
+        data-loop="true"
+      >
+        <div class="options-slider__inner container">
+          <div class="options-slider__number">
+            <div class="options-slider__number-value">04.</div>
+            <h6 class="options-slider__number-title h6">Равномерная засветка</h6>
+            <div class="options-slider__number-line"></div>
+          </div>
+          <div class="options-slider__body">
+            <div class="options-slider__info">
+              <h2 class="options-slider__info-title  h2">Равномерная <span class="accent-text">засветка</span></h2>
+              <h6 class="options-slider__info-subtitle h6">Светильники с равномерной засветкой – <span>устоявшийся тренд</span>, сочетающий в себе изящество и комфорт. <span>Бизнес центры класса А и выше</span>  давно устанавливают только такое освещение в офисах под сдачу в аренду.
+              </h6>
+              <a class="options-slider__info-button button--accent" href="#">Узнать подробнее</a>
+            </div>
+            <div class="options-slider__swiper swiper" data-js-slider-container>
+              <div class="options-slider__swiper-wrapper swiper-wrapper">
+                <div class="options-slider__swiper-slide swiper-slide">
+                  <img class="options-slider__swiper-image" src="./images/office.png" alt="Светильники для офисов и больших пространств">
+                  <a 
+                    class="options-slider__swiper-button button--purple" 
+                    href="#" 
+                    aria-label="Проекты" 
+                    title="Проекты"
+                  >
+                    Проекты
+                  </a>
+                  <div class="options-slider__description">
+                    <header class="options-slider__description-header">
+                      <h6 class="options-slider__description-title h6">Название проекта (если нужно)</h6>
+                    </header>
+                    <div class="options-slider__description-body">
+                      <p class="options-slider__description-text p">Листайте, чтобы увидеть больше</p>
+                      <a class="options-slider__description-link" href="#">
+                        <img src="./icons/arrow-left.svg" alt="Подробнее">
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="options-slider__swiper-slide swiper-slide">
+                  <img class="options-slider__swiper-image" src="./images/office.png" alt="Светильники для офисов и больших пространств">
+                  <a 
+                    class="options-slider__swiper-button button--purple" 
+                    href="#" 
+                    aria-label="Проекты" 
+                    title="Проекты"
+                  >
+                    Проекты
+                  </a>
+                  <div class="options-slider__description">
+                    <header class="options-slider__description-header">
+                      <h6 class="options-slider__description-title h6">Название проекта (если нужно)</h6>
+                    </header>
+                    <div class="options-slider__description-body">
+                      <p class="options-slider__description-text p">Листайте, чтобы увидеть больше</p>
+                      <a class="options-slider__description-link" href="#">
+                        <img src="./icons/arrow-left.svg" alt="Подробнее">
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="options-slider__swiper-navigation">
+                <a class="options-slider__swiper-nav-button options-slider__swiper-nav-button--prev" data-js-slider-prev>
+                  <img class="options-slider__swiper-nav-button-image" src="./icons/slider-arrow-left.svg" alt="Предыдущее">
+                </a>
+                <a class="options-slider__swiper-nav-button options-slider__swiper-nav-button--next" data-js-slider-next>
+                  <img class="options-slider__swiper-nav-button-image" src="./icons/slider-arrow-right.svg" alt="Следующее">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section 
+        class="options-slider options-slider--grilyato" 
+        data-js-slider
+        data-slides="1"
+        data-loop="true"
+      >
+        <div class="options-slider__inner container">
+          <div class="options-slider__number">
+            <div class="options-slider__number-value">05.</div>
+            <h6 class="options-slider__number-title h6">Грильято</h6>
+            <div class="options-slider__number-line"></div>
+          </div>
+          <div class="options-slider__body">
+            <div class="options-slider__info">
+              <h2 class="options-slider__info-title  h2">Равномерная <span class="accent-text">засветка</span></h2>
+              <h6 class="options-slider__info-subtitle h6">Создайте <span>равномерное, комфортное освещение</span> на рабочих местах.  Светильники в потолке <span>грильято</span> должны быть правильно установлены и сделан светотехнический расчёт освещения.
+              </h6>
+              <a class="options-slider__info-button button--accent" href="#">Узнать подробнее</a>
+            </div>
+            <div class="options-slider__swiper swiper" data-js-slider-container>
+              <div class="options-slider__swiper-wrapper swiper-wrapper">
+                <div class="options-slider__swiper-slide swiper-slide">
+                  <img class="options-slider__swiper-image" src="./images/office.png" alt="Светильники для офисов и больших пространств">
+                  <a 
+                    class="options-slider__swiper-button button--purple" 
+                    href="#" 
+                    aria-label="Проекты" 
+                    title="Проекты"
+                  >
+                    Проекты
+                  </a>
+                  <div class="options-slider__description">
+                    <header class="options-slider__description-header">
+                      <h6 class="options-slider__description-title h6">Название проекта (если нужно)</h6>
+                    </header>
+                    <div class="options-slider__description-body">
+                      <p class="options-slider__description-text p">Листайте, чтобы увидеть больше</p>
+                      <a class="options-slider__description-link" href="#">
+                        <img src="./icons/arrow-left.svg" alt="Подробнее">
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="options-slider__swiper-slide swiper-slide">
+                  <img class="options-slider__swiper-image" src="./images/office.png" alt="Светильники для офисов и больших пространств">
+                  <a 
+                    class="options-slider__swiper-button button--purple" 
+                    href="#" 
+                    aria-label="Проекты" 
+                    title="Проекты"
+                  >
+                    Проекты
+                  </a>
+                  <div class="options-slider__description">
+                    <header class="options-slider__description-header">
+                      <h6 class="options-slider__description-title h6">Название проекта (если нужно)</h6>
+                    </header>
+                    <div class="options-slider__description-body">
+                      <p class="options-slider__description-text p">Листайте, чтобы увидеть больше</p>
+                      <a class="options-slider__description-link" href="#">
+                        <img src="./icons/arrow-left.svg" alt="Подробнее">
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="options-slider__swiper-navigation">
+                <a class="options-slider__swiper-nav-button options-slider__swiper-nav-button--prev" data-js-slider-prev>
+                  <img class="options-slider__swiper-nav-button-image" src="./icons/slider-arrow-left.svg" alt="Предыдущее">
+                </a>
+                <a class="options-slider__swiper-nav-button options-slider__swiper-nav-button--next" data-js-slider-next>
+                  <img class="options-slider__swiper-nav-button-image" src="./icons/slider-arrow-right.svg" alt="Следующее">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="about">
+        <div class="about__inner container">
+          <header class="about__header">
+            <h6 class="about__header-title h6">Экспертность</h6>
+            <div class="about__header-line"></div>
+          </header>
+          <div class="about__body">
+            <div class="about__info">
+              <h2 class="about__info-title h2">
+                Руководитель компании <span>Алексей Виноградов</span>
+              </h2>
+              <h5 class="about__info-subtitle h5">Мы не просто поставляем свет — мы участвуем
+                в формировании стандартов и будущего освещения в России</h5>
+              <div class="about__info-image">
+                <img src="./images/about.png" alt="Руководитель компании Алексей Виноградов">
+                <div class="about__info-image-quote">«Мы делимся опытом — потому что верим: качество освещения влияет на экономику, комфорт и культуру»</div>
+              </div>
+            </div>
+            <div class="about__activity">
+              <ul class="about__activity-list">
+                <li class="about__activity-item">
+                  <img class="about__activity-image" src="./icons/activity-1.svg" alt="ПМЭФ">
+                  <h6 class="about__activity-title h6">Спикер Петербургского международного экономического форума (ПМЭФ), 2025 г. <br> <span class="activity__gray-text">Эффективные нефинансовые меры поддержки промышленности</span></h6>
+                  <div class="about__activity-icon"></div>
+              </ul>
+                <li class="about__activity-item">
+                  <img class="about__activity-image" src="./icons/activity-2.svg" alt="">
+                  <h6 class="about__activity-title h6">
+                    Спикер Российского международного энергетического форума, 2025 <br> <span class="activity__gray-text">Спекуляции на рынке госзакупок</span>
+                  </h6>
+                  <div class="about__activity-icon"></div>
+              </ul>
+                <li class="about__activity-item">
+                  <img class="about__activity-image about__activity-image--small" src="./icons/activity-3.svg" alt="">
+                  <h6 class="about__activity-title h6">
+                    Модератор сессии «Свет для человека», организованной Университетом ИТМО и Государственным Эрмитажем,  2024. <br> <span class="activity__gray-text">Актуальные вопросы и решения в области светового дизайна для школ, университетов, библиотек и других образовательных учреждений. </span>
+                  </h6>
+                  <div class="about__activity-icon"></div>
+              </ul>
+                <li class="about__activity-item">
+                  <img class="about__activity-image" src="./icons/activity-4.svg" alt="">
+                  <h6 class="about__activity-title h6">
+                    Спикер конференции CityLight, 2025. <br> <span class="activity__gray-text">Роль отраслевых ассоциаций в продвижении качественной отечественной продукции и дизайнерских услуг. </span>
+                  </h6>
+                  <div class="about__activity-icon"></div>
+              </ul>
+                <li class="about__activity-item">
+                  <img class="about__activity-image" src="./icons/activity-5.svg" alt="">
+                  <h6 class="about__activity-title h6">
+                    Участник дискуссий в Торгово-промышленной палате Санкт-Петербурга <br> <span class="activity__gray-text">Светотехническое оборудование в образовательных организациях.</span> 
+                  </h6>
+                  <div class="about__activity-icon"></div>
+              </ul>
+                <li class="about__activity-item">
+                  <img class="about__activity-image" src="./icons/activity-6.svg" alt="">
+                  <h6 class="about__activity-title h6">
+                    Спикер выставки Interlight Moscow, 2023.
+                  </h6>
+                  <div class="about__activity-icon"></div>
+              </ul>
+                <li class="about__activity-item">
+                  <img class="about__activity-image" src="./icons/activity-4.svg" alt="">
+                  <h6 class="about__activity-title h6">
+                    Спикер форума «Электроника России», 2023 <br> <span class="activity__gray-text">О борьбе с контрафактом.</span>
+                  </h6>
+                  <div class="about__activity-icon"></div>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="payment">
+        <div class="payment__inner container">
+          <div class="payment__info">
+            <div class="payment__info-body">
+              <h3 class="payment__info-title h3">Возможна оплата <span class="accent-text">после поставки</span></h3>
+              <a 
+                class="payment__info-button button--accent" 
+                href="#" 
+                aria-label="Узнать подробнее" 
+                title="Узнать подробнее"
+              >
+                Узнать подробнее
+              </a>
+            </div>
+            <img 
+              class="payment__info-image" 
+              src="./images/payment-bg.png" 
+              alt=""
+              loading="lazy"
+              width="587"
+              height="373"
+            >
+          </div>
+          <form 
+            class="payment__form" 
+            method="post" 
+            action="submit"
+            data-js-hero-form
+          >
+            <h3 class="payment__form-title h4">Узнайте <span class="accent-text">бюджет</span> на замену освещения</h3>
+            <label for="phone" class="payment__phone-label visually-hidden"></label>
+            <div class="payment__form-body">
+              <input 
+                class="payment__form-phone-input" 
+                type="tel" 
+                name="phone" 
+                id="phone" 
+                placeholder="+7 (___) ___-__-__"
+                aria-label="Телефон"
+                title="Телефон"
+                required
+                data-js-input-mask="+7 (000) 000-00-00"
+              >
+              <div class="payment__form-buttons">
+                <button 
+                  class="payment__form-button button--green" 
+                  type="submit" 
+                  aria-label="Узнать в WhatApp"
+                  title="Узнать в WhatApp"
+                  data-js-hero-form-button-whatsapp
+                >
+                  Узнать в WhatApp
+                </button>
+                <button
+                  class="payment__form-button button--accent"
+                  type="submit"
+                  aria-label="Узнать в Telegram"
+                  title="Узнать в Telegram"
+                  data-js-hero-form-button-telegram
+                >
+                  Узнать в Telegram
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </section>
+      <section 
+        class="rewards" 
+        data-js-slider
+        data-slides="4"
+        data-loop="true"
+        data-space="16"
+        data-breakpoints='{
+          "320": {"slidesPerView": 1},
+          "576": {"slidesPerView": 2, "spaceBetween": 10},
+          "768": {"slidesPerView": 3, "spaceBetween": 14},
+          "1024": {"slidesPerView": 4, "spaceBetween": 16},
+          "1440": {"slidesPerView": 5, "spaceBetween": 16}
+        }'
+      >
+        <div class="rewards__inner container">
+          <header class="rewards__header">
+            <h6 class="rewards__header-title h6">Благодарности</h6>
+            <div class="rewards__header-line"></div>
+          </header>
+          <div class="rewards__body">
+            <h2 class="rewards__title h2">Благодарности
+              и награды от <span>партнёров</span> 
+            </h2>
+            <div class="rewards-slider__navigation">
+              <a class="rewards-slider__navigation-prev" data-js-slider-prev>
+                <img class="rewards-slider__navigation-icon" src="./icons/arrow-left-white.svg" alt="">
+              </a>
+              <a class="rewards-slider__navigation-next" data-js-slider-next>
+                <img class="rewards-slider__navigation-icon" src="./icons/arrow-right-white.svg" alt="">
+              </a>
+            </div>
+          </div>
+          <div class="rewards-slider__swiper swiper" data-js-slider-container>
+            <div class="rewards-slider__swiper-wrapper swiper-wrapper">
+              <div class="rewards-slider__swiper-slide swiper-slide">
+                <h5 class="rewards-slider__swiper-title h5">Награда за самый креативный проект</h5>
+                <img 
+                  class="rewards-slider__swiper-image" 
+                  src="./images/reward.png" 
+                  alt="Награда"
+                >
+              </div>
+              <div class="rewards-slider__swiper-slide swiper-slide">
+                <h5 class="rewards-slider__swiper-title h5">Награда за самый креативный проект</h5>
+                <img 
+                  class="rewards-slider__swiper-image" 
+                  src="./images/reward.png" 
+                  alt="Награда"
+                >
+              </div>
+              <div class="rewards-slider__swiper-slide swiper-slide">
+                <h5 class="rewards-slider__swiper-title h5">Награда за самый креативный проект</h5>
+                <img 
+                  class="rewards-slider__swiper-image" 
+                  src="./images/reward.png" 
+                  alt="Награда"
+                >
+              </div>
+              <div class="rewards-slider__swiper-slide swiper-slide">
+                <h5 class="rewards-slider__swiper-title h5">Награда за самый креативный проект</h5>
+                <img 
+                  class="rewards-slider__swiper-image" 
+                  src="./images/reward.png" 
+                  alt="Награда"
+                >
+              </div>
+              <div class="rewards-slider__swiper-slide swiper-slide">
+                <h5 class="rewards-slider__swiper-title h5">Награда за самый креативный проект</h5>
+                <img 
+                  class="rewards-slider__swiper-image" 
+                  src="./images/reward.png" 
+                  alt="Награда"
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section 
+        class="reviews"
+        data-js-slider
+        data-slides="5"
+        data-loop="true"
+        data-space="16"
+        data-breakpoints='{
+          "320": {"slidesPerView": 1},
+          "576": {"slidesPerView": 2, "spaceBetween": 10},
+          "768": {"slidesPerView": 3, "spaceBetween": 10},
+          "1024": {"slidesPerView": 4, "spaceBetween": 12},
+          "1280": {"slidesPerView": 4, "spaceBetween": 12},
+          "1440": {"slidesPerView": 5, "spaceBetween": 16}
+        }'
+      >
+        <div class="reviews__inner container">
+          <header class="reviews__header">
+            <h6 class="reviews__header-title h6">Отзывы</h6>
+            <div class="reviews__header-line"></div>
+          </header>
+          <div class="reviews__body">
+            <h2 class="reviews__body-title h2"><span>Отзывы</span> от владельцев бизнеса, архитекторов и управляющих компаний </h2>
+            <div class="reviews__body-slider-navigation">
+              <a class="reviews__body-slider-navigation-prev" data-js-slider-prev>
+                <img class="reviews__body-slider-navigation-icon" src="./icons/arrow-left-gray.svg" alt="Предыдущее">
+              </a>
+              <a class="reviews__body-slider-navigation-next" data-js-slider-next>
+                <img class="reviews__body-slide-navigation-icon" src="./icons/arrow-right-gray.svg" alt="Следующее">
+              </a>
+            </div>
+          </div>
+          <div class="reviews__swiper swiper" data-js-slider-container>
+            <div class="reviews__swiper-wrapper swiper-wrapper">
+              <div class="reviews__swiper-slide swiper-slide reviews__swiper-slide--certificate">
+                <img 
+                  class="reviews__swiper-image" 
+                  src="./images/reviews-1.png" 
+                  alt=""
+                  width="295"
+                  height="207"
+                >
+                <footer class="reviews__swiper-footer">
+                  <h5 class="reviews__swiper-footer-title h5">Сертификат дилера Дюрей
+                  </h5>
+                  <a class="reviews__swiper-footer-button">
+                    <img 
+                      class="reviews__slider-footer-button-icon" 
+                      src="./icons/fullscreen.svg" 
+                      alt="Полный экран"
+                      width="16"
+                      height="16"
+                    >
+                  </a>
+                </footer>
+              </div>
+              <div class="reviews__swiper-slide swiper-slide">
+                <img 
+                  class="reviews__swiper-image" 
+                  src="./images/reviews-2.png" 
+                  alt=""
+                  width="203"
+                  height="290"
+                >
+                <footer class="reviews__swiper-footer">
+                  <h5 class="reviews__swiper-footer-title h5">CCI_000012</h5>
+                  <a class="reviews__swiper-footer-button">
+                    <img 
+                      class="reviews__slider-footer-button-icon" 
+                      src="./icons/fullscreen.svg" 
+                      alt="Полный экран"
+                      width="16"
+                      height="16"
+                    >
+                  </a>
+                </footer>
+              </div>
+              <div class="reviews__swiper-slide swiper-slide">
+                <img 
+                  class="reviews__swiper-image" 
+                  src="./images/reviews-3.png" 
+                  alt=""
+                  width="203"
+                  height="290"
+                >
+                <footer class="reviews__swiper-footer">
+                  <h5 class="reviews__swiper-footer-title h5">Отзыв от ИТМО</h5>
+                  <a class="reviews__swiper-footer-button">
+                    <img 
+                      class="reviews__slider-footer-button-icon" 
+                      src="./icons/fullscreen.svg" 
+                      alt="Полный экран"
+                      width="16"
+                      height="16"
+                    >
+                  </a>
+                </footer>
+              </div>
+              <div class="reviews__swiper-slide swiper-slide">
+                <img 
+                  class="reviews__swiper-image" 
+                  src="./images/reviews-4.png" 
+                  alt=""
+                  width="203"
+                  height="290"
+                >
+                <footer class="reviews__swiper-footer">
+                  <h5 class="reviews__swiper-footer-title h5">Благодарность от ЭНЕФ</h5>
+                  <a class="reviews__swiper-footer-button">
+                    <img 
+                      class="reviews__slider-footer-button-icon" 
+                      src="./icons/fullscreen.svg" 
+                      alt="Полный экран"
+                      width="16"
+                      height="16"
+                    >
+                  </a>
+                </footer>
+              </div>
+              <div class="reviews__swiper-slide swiper-slide">
+                <img 
+                  class="reviews__swiper-image" 
+                  src="./images/reviews-5.png" 
+                  alt=""
+                  width="203"
+                  height="290"
+                >
+                <footer class="reviews__swiper-footer">
+                  <h5 class="reviews__swiper-footer-title h5">Диплом участника выставки в выставке РЕМЕЗ</h5>
+                  <a class="reviews__swiper-footer-button">
+                    <img 
+                      class="reviews__slider-footer-button-icon" 
+                      src="./icons/fullscreen.svg" 
+                      alt="Полный экран"
+                      width="16"
+                      height="16"
+                    >
+                  </a>
+                </footer>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="contact-us"></section>
+    </main>
+    <footer class="footer">
+
+    </footer>
+  </body>
+</html>
