@@ -45,7 +45,7 @@
       align-items: start;
       row-gap: 3rem;
       padding: 20px;
-      background: url('./src/images/overlay-bg.png') center center / cover no-repeat;
+      background: url('/images/overlay-bg.png') center center / cover no-repeat;
       transition-duration: var(--transition-duration);
 
       &:not(.is-active) {
