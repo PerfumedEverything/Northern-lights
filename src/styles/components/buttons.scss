@@ -1,0 +1,56 @@
+@use '@/styles/helpers' as *;
+
+.button {
+  &--transparent {
+    padding: fluid-to-laptop(16, 8) fluid-to-laptop(24, 15);
+    column-gap: fluid-to-laptop(40, 15);
+    font-weight: 700;
+    background-color: transparent;
+    border: var(--border);
+    border-radius: var(--border-radius);
+
+    @include hover {
+      color: var(--color-dark);
+      background-color: var(--color-white);
+    }
+  }
+
+  &--accent {
+    align-items: center;
+    padding: fluid-to-laptop(16, 8) fluid-to-laptop(40, 21);
+    column-gap: fluid-to-laptop(40, 15);
+    font-weight: 700;
+    color: var(--color-white);
+    background-color: var(--color-accent);
+    border-radius: var(--border-radius);
+    border: none;
+    transition-duration: var(--transition-duration);
+
+    @include hover {
+      background: var(--gradient);
+    }
+  }
+
+  &--green {
+    align-items: center;
+    padding: fluid-to-laptop(16, 8) fluid-to-laptop(40, 21);
+    background-color: var(--color-green);
+    border: none;
+    border-radius: var(--border-radius);
+    font-weight: 700;
+    color: var(--color-white);
+    transition-duration: var(--transition-duration);
+
+    @include hover {
+      background: var(--color-green-hover);
+    }
+  }
+
+  &--purple {
+    align-items: center;
+    padding: fluid(16, 11) fluid(40, 16);
+    border-radius: var(--border-radius);
+    background-color: var(--color-purple);
+    font-weight: 700;
+  }
+}

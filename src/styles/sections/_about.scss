@@ -1,0 +1,154 @@
+@use '@/styles/helpers' as *;
+
+.about {
+  background-color: var(--color-gray);
+  
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    row-gap: fluid(60, 24);
+    padding-block: fluid(150, 32) fluid(120, 60);
+  }
+
+  &__header {
+    display: flex;
+    align-items: center;
+    column-gap: 16px;
+
+    &-title {
+      color: var(--color-dark);
+      text-transform: uppercase;
+    }
+
+    &-line {
+      height: 1px;
+      background-color: rgba(22, 22, 22, 0.3);
+      width: 100%;
+    }
+  }
+
+  &__body {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: fluid-to-laptop(115, 40);
+
+    @include tablet {
+      grid-template-columns: 1fr;
+      row-gap: 48px;
+    }
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    row-gap: 32px;
+
+    &-title {
+      color: rgba(22, 22, 22, 0.5);
+
+      span {
+        color: var(--color-dark);
+        text-decoration: underline;
+        text-underline-offset: 13px;
+        text-decoration-thickness: 1px;
+      }
+    }
+
+    &-subtitle {
+      color: var(--color-dark);
+      max-width: fluid(509, 328);
+    }
+
+    &-image {
+      position: relative;
+
+      &-quote {
+        position: absolute;
+        bottom: 24px;
+        left: 24px;
+        max-width: 330px;
+        padding: 12px 16px;
+        border-radius: var(--border-radius-s);
+        backdrop-filter: blur(92px);
+        background: rgba(255, 255, 255, 0.1);
+        color: var(--color-white);
+        font-weight: 700;
+
+        @include tablet {
+          position: static;
+          bottom: 0;
+          max-width: 667px;
+          background-color: var(--color-white);
+          color: var(--color-dark);
+        }
+      }
+    }
+  }
+
+  &__activity {
+    &-list {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &-item {
+      display: flex;
+      align-items: center;
+      column-gap: fluid(32, 22);
+      padding-block: fluid(28, 20);
+      cursor: pointer;
+
+      @include hover {
+        border-top: 1px solid #b3b3b3;
+        border-bottom: 1px solid #b3b3b3;
+
+        .about__activity-icon::after {
+          background: url('./src/icons/arrow-up-right-accent.svg') no-repeat center;
+        }
+      }
+    }
+
+    &-image {
+      width: 48px;
+      height: 48px;
+
+      @include mobile {
+        width: 42px;
+        height: 42px;
+      }
+
+      &--small {
+        min-width: 48px !important;
+
+        @include mobile {
+          min-width: 42px !important;
+        }
+      }
+    }
+
+    &-icon {
+      position: relative;
+      width: 20px;
+      height: 20px;
+
+      &::after {
+        content: '';
+        position: absolute;
+        display: block;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: url('./src/icons/arrow-up-right.svg') no-repeat center;
+        transition: background-image .25s ease;
+      }
+    }
+
+    &-title {
+      color: var(--color-dark);
+      margin-right: auto;
+      max-width: 700px;
+    }
+  }
+}
+

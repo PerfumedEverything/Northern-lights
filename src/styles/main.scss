@@ -1,0 +1,21 @@
+@use "./helpers/index" as *;
+
+@use "normalize";
+@use "fonts";
+@use "globals";
+@use "variables";
+@use "utils";
+
+@use "./layout/header";
+@use "./layout/footer";
+
+@use "./sections/hero";
+@use "./sections/options-slider";
+@use "./sections/about";
+@use './sections/payment';
+@use "./sections/rewards";
+@use "./sections/reviews";
+
+@use "./components/buttons";
+@use "./components/burger-button";
+@use "./components/logo";

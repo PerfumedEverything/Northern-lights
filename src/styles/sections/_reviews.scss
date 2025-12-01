@@ -1,0 +1,137 @@
+@use '@/styles/helpers' as *;
+
+.reviews {
+  padding-block: fluid(120, 32) fluid(222, 80);
+  background-color: var(--color-gray);
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    row-gap: fluid(60, 24);
+  }
+
+  &__header {
+    display: flex;
+    align-items: center;
+    column-gap: fluid(67, 16);
+
+    &-title {
+      color: var(--color-dark);
+      text-transform: uppercase;
+    }
+
+    &-line {
+      height: 1px;
+      width: 100%;
+      background-color: rgba(22, 22, 22, 0.3);
+    }
+  }
+
+  &__body {
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+
+    &-title {
+      max-width: fluid(1291, 328);
+      color: rgba(22, 22, 22, 0.7);
+
+      span {
+        color: var(--color-dark);
+        text-decoration: underline;
+        text-underline-offset: 13px;
+        text-decoration-thickness: 1px;
+      }
+    }
+
+    &-slider-navigation {
+      display: flex;
+      align-items: center;
+      column-gap: 4px;
+
+      &-prev, &-next {
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: fluid(60, 40);
+        height: fluid(60, 40);
+        border: 1px solid rgba(22, 22, 22, 0.1);
+        border-radius: var(--border-radius-s);
+
+        @include hover {
+          border-color: var(--color-dark);
+        }
+      }
+
+      &-icon {
+        width: fluid(24, 16);
+        height: fluid(24, 16);
+      }
+    }
+  }
+
+  &__swiper {
+    overflow: hidden;
+    width: 100%;
+
+    &-wrapper {
+      min-width: 0 !important;
+    }
+
+    &-slide {
+      position: relative;
+      display: flex !important;
+      flex-direction: column !important;
+      row-gap: 28px !important;
+      width: 100%;
+      height: 450px !important;
+      padding: fluid(24, 20);
+      border-radius: var(--border-radius);
+      background-color: var(--color-white);
+
+      &--certificate {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding-block: 69px 56px;
+
+        @include laptop {
+          padding-block: 69px 56px;
+        }
+      }
+    }
+
+    &-image {
+      align-self: center;
+    }
+
+    &-footer {
+      padding-top: 20px;
+      border-top: 1px solid rgba(22, 22, 22, 0.1);
+
+      &-title {
+        color: var(--color-dark);
+      }
+
+      &-button {
+        position: absolute;
+        bottom: fluid(24, 12);
+        right: fluid(24, 12);
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: fluid(40, 32);
+        height: fluid(40, 32);
+        border: 1px solid rgba(22, 22, 22, 0.1);
+        border-radius: var(--border-radius-s);
+
+        &-icon {
+          width: fluid(16, 12);
+          height: fluid(16, 12);
+        }
+      }
+    }
+  }
+}

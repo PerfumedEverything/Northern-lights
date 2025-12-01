@@ -1,0 +1,36 @@
+@use 'helpers' as *;
+
+:root {
+  --color-white: #fff;
+
+  --color-dark: #1b1b1b;
+
+  --color-gray: #E8E8E8;
+  --color-gray-text: rgba(255, 255, 255, 0.6); 
+
+  --color-accent: #05A1E6;
+
+  --color-green: #70AA5E;
+  --color-green-hover: #59a641;
+
+  --color-purple: #8E3083;
+
+  --gradient: linear-gradient(
+    270deg,
+    #04b2ff 0%,
+    #04638d 100%
+  );
+
+  --border: 1px solid rgba(255, 255, 255, 0.2);
+  --border-radius-l: 16px;
+  --border-radius: 8px;
+  --border-radius-s: 4px;
+  
+  --shadow: 0 4px 8px 0 rgba(163, 163, 163, 0.1);
+
+  --font-family-base: 'PTSans', sans-serif;
+
+  --container-width: 1800px;
+
+  --transition-duration: 0.2s;
+}
