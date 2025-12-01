@@ -26,7 +26,7 @@
       justify-content: start;
       padding: 40px;
       border-radius: var(--border-radius-l);
-      background: url('../src/images/slider-bg-indirect.png') center / cover no-repeat;
+      background: url('./images/slider-bg-indirect.png') center / cover no-repeat;
 
       &-title {
         color: var(--color-dark);
@@ -96,7 +96,7 @@
       justify-content: start;
       padding: 40px;
       border-radius: var(--border-radius-l);
-      background: url('../src/images/slider-bg-uniform.png') 100% / 100%  no-repeat;
+      background: url('./images/slider-bg-uniform.png') 100% / 100%  no-repeat;
 
       &-title {
         margin-bottom: 0;
@@ -125,7 +125,7 @@
       justify-content: start;
       padding: 40px;
       border-radius: var(--border-radius-l);
-      background: url('../src/images/slider-bg-grilyato.png') 100% / 100%  no-repeat;
+      background: url('./images/slider-bg-grilyato.png') 100% / 100%  no-repeat;
 
       &-title {
         margin-bottom: 0;

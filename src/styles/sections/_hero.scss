@@ -3,7 +3,7 @@
 .hero {
   margin-top: -119px; 
   padding-top: 163px;
-  background: url('../src/images/hero-bg.png') right center / cover no-repeat;
+  background: url('./images/hero-bg.png') right center / cover no-repeat;
   overflow: hidden;
 
   @include mobile {
