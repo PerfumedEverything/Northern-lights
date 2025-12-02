@@ -1,7 +1,6 @@
 @use '@/styles/helpers' as *;
 
 .logo {
-
   @include tablet {
     margin-right: auto;
   }
@@ -10,6 +9,4 @@
     width: fluid(162, 95);
     height: fluid(63, 36);
   }
-
-  
 }

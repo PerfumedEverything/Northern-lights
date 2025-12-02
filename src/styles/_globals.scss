@@ -3,6 +3,7 @@
 body {
   @include fluid-text(18, 14);
 
+  position: relative;
   display: flex;
   flex-direction: column;
   font-family: var(--font-family-base);
@@ -90,4 +91,8 @@ a {
 
 .activity__gray-text {
   color: rgba(22, 22, 22, 0.5);
+}
+
+.hidden {
+  display: none !important;
 }
